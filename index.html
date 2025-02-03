@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.html">
+  <link rel="stylesheet" href="durian.html">
+  <link rel="stylesheet" href="pine.html">
+  <link rel="stylesheet" href="oak.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="contact.html">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- google fonts -->
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="left">
+      <img id="lo" src="lo.jpg" alt="Logo" height="60px" />
+      <h4 id="f">Decor</h4>
+    </div>
+    <div class="middle">
+      <ul class="middleli">
+        <li><a id="active" href="#">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+      
+        <li class="nav-item dropdown">
+          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="durian.html">durian</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="pine.html">pine</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="oak.html">oak</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="maple.html">maple</a></li>
+          </ul>
+        </li>
+        <li><a href="contactUs.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a  href="login.html">Login</a></li>
+      </ul>
+    
+    </div>
+    <div class="right">
+     
+      <button class="card-btnnav1" id="display-none">Call Us</button>
+      <button class="card-btnnav"  id="display-none">Email Us</button>
+
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  <div class="bg-text">
+    <h1>Let Your Home Be Designed And Decorative</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis totam quas, at praesentium enim
+      suscipit alias architecto omnis, vero ab, quae asperiores quis sequi!</p>
+    <!-- <a class="explore1" href="explorenow.html"><button id="explore" >Explore Now</button></a> -->
+    <a href="explorenow.html" class="btn btn-dark  " id="kash">explore now</a>
+  </div>
+  <style>
+    /* #kash{
+      color: black;
+      position: relative;
+      left: 300px;
+      top: 10px;
+      background-color: #eff5fa;
+      transition: 0.3s ease;
+      
+    }
+    #kash:hover{
+      background-color: #1abc9c;
+    } */
+
+
+
+    #kash {
+  color: black;
+  position: relative;
+  left: 300px;
+  top: 10px;
+  background-color: #eff5fa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#kash:hover {
+  background-color: #1abc9c;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #kash {
+    left: 100px; /* Adjust based on your layout */
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #kash {
+    left: 50px; /* Center align for smaller screens */
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  #kash {
+    left: 20px;
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+  </style>
+
+
+
+
+  <div class="containerhome">
+    <h1 class="section-title">Our Furniture Collection</h1>
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="pexels-falling4utah-2724749.jpg" alt="Modern Sofa" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Kitchen</h3>
+          <p class="card-description">Enhance your living room with this elegant modern sofa.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="w1.jpg" alt="Wooden Chair" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Classic wooden chair perfect for dining spaces.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="w2.jpg" alt="Luxury Bed" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Transform your bedroom with this luxurious and cozy bed.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="w3.jpg" alt="Glass Coffee Table" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Stylish coffee table with a glass top for modern interiors.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="w4.jpg" alt="Bookshelf" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Organize your books with this sleek and durable bookshelf.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="w5.jpg" alt="Dining Table Set" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">A perfect dining set for family gatherings and meals.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="card">
+        <img src="w6.jpg" alt="Recliner Chair" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Relax in style with this comfortable recliner chair.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="card">
+        <img src="w7.jpg" alt="Office Desk" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Modern office desk with plenty of storage for productivity.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="card">
+        <img src="w8.jpg" alt="Outdoor Lounge" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Create the perfect outdoor setup with this lounge set.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 10 -->
+      <div class="card">
+        <img src="pexels-fotoaibe-1571453.jpg" alt="Bar Stools" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Minimalistic bar stools for modern kitchen setups.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 11 -->
+      <div class="card">
+        <img src="w10.jpg" alt="Nightstand" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Complete your bedroom with this sleek nightstand.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+      <!-- Card 12 -->
+      <div class="card">
+        <img src="w11.jpg" alt="Storage Cabinet" class="card-img">
+        <div class="card-content">
+          <h3 class="card-title">Modern Furniture</h3>
+          <p class="card-description">Versatile storage cabinet for all your organizational needs.</p>
+          <button class="card-btn"><a href="explorenow.html">View more</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="about">
+    <div class="leftabout">
+      <h2 id="abouth2">About Us</h2>
+      <p id="aboutp" class="paraleft1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iusto ad dolorem eaque cupiditate, modi magni molestias magnam impedit</p><p id="displaynone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a cum nesciunt obcaecati doloremque rem animi debitis quo culpa, commodi deleniti aliquam, ea voluptatibus voluptas.</p>
+      <p id="displaynone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a cum nesciunt obcaecati doloremque rem animi debitis quo culpa, commodi deleniti aliquam, ea voluptatibus voluptas.</p>
+    </div>
+    <div class="rightabout">
+      <img src="about1.jpg" alt="" height="80%"
+      width="80%">
+    </div>
+  </div>
+  <div class="aboutsecondpart">
+    <div class="leftsecondpart">
+      <img src="about2.jpg" alt="" height="80%"
+      width="95%">
+    </div>
+    <div class="rightsecondpart">
+      <h2>Our Mission: Helping Millions Of Houses Look Better</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt suscipit quam eum, dolorum blanditiis, dolores dignissimos iusto ipsum quaerat eaque ad optio sequi dolorem voluptatem consectetur ullam eius repellendus minus?</p>
+      <p id="displaynone">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ipsa itaque atque laudantium laboriosam quis harum odit numquam! Impedit, recusandae?</p>
+      <p id="displaynone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat dignissimos expedita consectetur laboriosam accusamus corporis exercitationem nobis, ex laborum repudiandae, alias nostrum eveniet quae. Illo hic expedita et odio.</p>
+    </div>
+  </div>
+  <div class="aboutthirdpart">
+    <div class="leftthirdpart">
+      <h2>Our Story </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid accusantium, neque laborum error magnam ea tempore modi quasi beatae minus culpa unde alias maiores doloribus eum impedit vero aspernatur eaque labore minima totam obcaecati.</p>
+      <p id="displaynone">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur pariatur ullam mollitia ipsum accusamus, optio ad minus obcaecati sapiente.</p>
+      <p id="displaynone">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quisquam quod, possimus ipsum ea officiis accusantium corrupti a vitae ut sapiente neque rerum ullam distinctio!</p>
+      <p id="displaynone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium, numquam aut volupt</p>
+    </div>
+    <div class="rightthirdpart">
+      <img src="about3.jpg" alt="" width="100%"
+      height="90%">
+    </div>
+  </div>
+<!-- about us end -->
+
+
+
+
+
+
+  <script>
+  
+
+    const hamburger = document.querySelector('.hamburger');
+    const navbar = document.querySelector('.navbar');
+
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+
+
+  </script>
+  <br><br><br><br>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>ABOUT US</h4>
+        <p> <i class="fa-solid fa-message"></i> "Hi, my name is Kashan, and I am a furniture maker. If you need any kind
+          of furniture design" kindly contact with my team . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quo, rerum recusandae unde amet ratione nostrum iste molestias illum, sapiente minima sed excepturi, animi ut?</p>
+      </div>
+      <div class="footer-section">
+        <h5>Links</h5>
+        <ul>
+          <li><a href="#"> <i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#"> <i class="fa-solid fa-toolbox"></i> Services</a></li>
+          <li><a href="contact.html"> <i class="fa-solid fa-phone"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p> <i class="fa-solid fa-envelope"></i> Email: saadkmg4@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> Phone: 030027860666</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
